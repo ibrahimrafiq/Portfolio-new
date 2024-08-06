@@ -1,0 +1,419 @@
+/* Import Montserrat font */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+#nav-top 
+  {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar stays on top */
+    background: rgba(255, 255, 255, 0.382);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+
+.navbar-brand img {
+  animation: rotate 5s linear infinite;
+  position: absolute;
+  left: 50px; /* Adjust this value to move the logo closer to the left */
+  top: 15px;
+}
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+/* Rotating Logo */
+.rotating-logo {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Background Video */
+#background-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.hero-txt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.hero-left,
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hero-txt img {
+  border-radius: 20px;
+  border: 6px solid #555;
+  width: 240px;
+  height: 360px;
+  object-fit: cover;
+  transition: transform 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-txt img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#profile-text {
+  display: none;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#my-name {
+  font-family: 'Montserrat', sans-serif;
+  color: #f5f5f5;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+#name-container {
+  display: inline-block;
+  text-align: left;
+}
+
+#p-hero {
+  font-family: 'Montserrat', sans-serif;
+  color: #ddd;
+  text-align: center;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+  min-height: 80vh;
+}
+
+.about-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: #e6e8e9;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#skills-h {
+  font-family: 'Montserrat', sans-serif;
+  color: #f39c12;
+  margin-bottom: 20px;
+}
+.contact-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: #f39c12;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  background: linear-gradient(to right, #042e50, #ff8800);
+  padding: 90px; /* Increased padding */
+  border-radius: 10px;
+}
+
+.about-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid #333;
+}
+
+.about-content {
+  color: #fff;
+  text-align: left;
+}
+
+.about-para {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+/* About Section */
+#about-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-section .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Skills Section */
+
+#skills-section {
+  background: url('dm_20240102-types-of-data-analytics.webp') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+#skills-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: #fafdff;
+  
+  font-weight: bold;
+}
+
+#skills-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#skills-section .skill-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-logo {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Section */
+#contact-section {
+  background-color: #fff;
+  color: #333;
+  position: relative;
+  padding: 20px 0;
+  min-height: auto;
+  width: 100%;
+}
+
+.contact-info {
+  text-align: left;
+  position: relative;
+  bottom: 0;
+  left: -160px;
+  bottom: -25px;
+  width: 100%;
+  position: respon;
+}
+
+.contact-logo {
+  width: 30px;
+  height: auto;
+  margin-right: 27px;
+  vertical-align: center;
+}
+
+.contact-logo-big {
+  width: 35px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: center;
+}
+
+.contact-details {
+  margin: 5px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-text {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  margin-left: 5px;
+  width: 100%;
+}
+
+footer {
+  background-color: #fff;
+  color: #333;
+}
+
+footer a {
+  color: #333;
+}
+
+.btn-outline-light {
+  border-color: #f39c12;
+  color: #f39c12;
+}
+
+.btn-outline-light:hover {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+/* Currently looking for role badge */
+#currently-badge {
+  position: absolute;
+  top: 180px;
+  left: 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#currently-badge .status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#currently-badge .status-text {
+  font-weight: bold;
+}
+
+#currently-badge .status-subtext {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+/* Pulsing Icon in Bottom Right */
+#pulsing-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 75px;
+  border-radius: 10px;
+  animation: pulse 2s infinite;
+  z-index: 1000;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-txt {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .hero-left, .hero-right {
+    flex: none;
+    width: 100%;
+  }
+  #my-name {
+    font-size: 2.5rem;
+  }
+  #currently-badge {
+    top: 120px;
+    left: 20px;
+    padding: 5px 10px;
+  }
+  .about-container {
+    padding: 40px;
+  }
+  .skill-card {
+    width: 150px;
+  }
+}

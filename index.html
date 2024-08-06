@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="milestone" content="Portfolio">
+    <title>Ibrahim's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero-section">
+                <img src="favicon.ico" alt="Logo" width="30" height="30" class="d-inline-block align-text-top rotating-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="my_work.html" target="_blank">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills-section">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="hero-section" class="hero">
+        <video autoplay loop muted id="background-video">
+            <source src="binary.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="currently-badge">
+            <div class="status-dot"></div>
+            <div>
+                <span class="status-text">currently</span>
+                <span class="status-subtext">looking for my next role</span>
+            </div>
+        </div>
+        <div class="container hero-txt">
+            <div class="hero-left">
+                <img src="Ibs.jpg" class="Me" id="profile-pic" alt="My picture">
+            </div>
+            <div class="hero-right">
+                <div id="name-container">
+                    <h1 id="my-name">Ibrahim<br>Rafiq</h1>
+                    <p id="p-hero">Welcome to my Portfolio!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-section" class="text-center">
+        <div class="container about-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="mission.jpeg" class="about-pic" alt="My picture">
+                </div>
+                <div class="col-md-6 about-content">
+                    <h1 class="about-heading">About Me!</h1>
+                    <p class="about-para"> I am originally from Pakistan, currently pursuing Information Science (with a Data Science Emphasis) and Computer Science at the University of Arizona. My passion for sports drives my enthusiasm for working with sports data, which I find particularly fascinating.
+                         While I enjoy working with all kinds of data, sports data holds a special appeal for me.
+                         Additionally, I am passionate about bringing concepts and ideas to life and enjoy collaborating with others to develop creative and effective solutions to problems.
+                           My multicultural background fuels my innovative thinking and enables me to approach problem-solving from multiple perspectives.</p>
+                    <p class="about-para">UI/UX design is another area that deeply interests me due to its blend of creativity and functionality. I am passionate about understanding user behavior and needs to create intuitive and engaging interfaces. The process of transforming user feedback and insights into seamless digital experiences excites me. Working with cross-functional teams allows me to merge diverse perspectives, ultimately crafting user-centric solutions that not only meet but exceed expectations. Let's work together to create impactful and innovative experiences that surprise, delight, and provoke thought.</p>
+                    <!-- Add the contact form below -->
+                  <!-- <form id="contact-form"></form>
+                        <div class="form-group">
+                            <label for="user_name">Name:</label>
+                            <input type="text" class="form-control" id="user_name" name="user_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_email">Email:</label>
+                            <input type="email" class="form-control" id="user_email" name="user_email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                        <div id="form-response"></div>
+                    </form>-->
+                </div>
+            </div>
+        </div>
+    </section>*
+    <section id="skills-section" class="text-center">
+        <h1 id="skills-heading">Skills</h1>
+        <div class="container skill-container">
+            <div class="skill-card">
+                <img src="python.png" class="skill-logo" alt="Python logo">
+                <p>Python</p>
+            </div>
+            <div class="skill-card">
+                <img src="R.png" class="skill-logo" alt="R logo">
+                <p>R</p>
+            </div>
+            <div class="skill-card">
+                <img src="DATA ENGINEERING.png" class="skill-logo" alt="Data Engineering logo">
+                <p>Data Engineering</p>
+            </div>
+            <div class="skill-card">
+                <img src="SQL.png" class="skill-logo" alt="SQL logo">
+                <p>SQL</p>
+            </div>
+            
+            <div class="skill-card">
+                <img src="AWS.png" class="skill-logo" alt="AWS logo">
+                <p>AWS</p>
+            </div>
+            <div class="skill-card">
+                <img src="FIGMA.png" class="skill-logo" alt="Figma logo">
+                <p>Data Analytics</p>
+            </div>
+            <div class="skill-card">
+                <img src="UI.png" class="skill-logo" alt="UI logo">
+                <p>User Interface</p>
+            </div>
+            <div class="skill-card">
+                <img src="UX.png" class="skill-logo" alt="UX logo">
+                <p>User Experience</p>
+            </div>
+            <div class="skill-card">
+                <img src="unix.png" class="skill-logo" alt="Linux/Unix logo">
+                <p>Linux/Unix</p>
+            </div>
+            <div class="skill-card">
+                <img src="Javascript.webp" class="skill-logo" alt="Javascript logo">
+                <p>Javascript</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/html.png" class="skill-logo" alt="HTML logo">
+                <p>HTML</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/CSS.png" class="skill-logo" alt="CSS logo">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/B1.png" class="skill-logo" alt="Bootstrap logo">
+                <p>Bootstrap</p>
+            </div>
+    
+        </div>
+    </section>
+    <section id="contact-section" class="text-center contact-exception">
+        <h1 class="contact-heading">Contact Me</h1>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100009570131378" role="button">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/ibrahim-rafiq-968069261/" role="button">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ir.2802/?hl=en" role="button">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p class="contact-details">
+                    <a href="mailto:ibrahimrafiq@arizona.edu">
+                        <img src="email.png" class="contact-logo" alt="Email logo">
+                        <a href="mailto:ibrahimrafiq@arizona.edu">
+                        ibrahimrafiq@arizona.edu
+                        </a>
+                    </a>
+                </p>
+                <p class="contact-details">
+                    <a href="https://infosci.arizona.edu/" target="_blank">
+                        <img src="UOFA.png" class="contact-logo-big" alt="University of Arizona logo">
+                    </a>
+                    <span class="contact-text">
+                        B.S Information Science (Data Science Emphasis)<br>
+                        University of Arizona<br>
+                        School of Information Science
+                    </span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer id="footer-section" class="bg-light text-center text-dark">
+        <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.2)">
+            © 2023 Ibrahim Rafiq
+        </div>
+    </footer>
+    <a href="RESUME SUM.pdf" target="_blank">
+        <img src="resume.png" id="pulsing-icon" alt="Pulsing Resume Icon">
+    </a>
+    <!-- Bootstrap JS with Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJcHmn1z9v+0d0FEMnQgiRRSQQxSfID4kkp7l7fRA1/tEyg2Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
+    <script>
+    </script>
+</body>
+</html>
