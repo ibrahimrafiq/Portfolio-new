@@ -418,14 +418,3 @@ footer a {
     width: 150px;
   }
 }
-/* Maintain positions for larger screens */
-@media (min-width: 1200px) {
-  #currently-badge {
-    top: 180px;
-    left: 50px;
-  }
-  
-  .hero-left {
-    justify-content: flex-start;
-  }
-}
